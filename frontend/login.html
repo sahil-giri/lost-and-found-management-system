@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="login" data-nav="login" data-auth="none">
+<div class="auth-wrap"><div class="card auth-card"><h1>Welcome back</h1><p class="sub">Log in to your account</p>
+<div id="msg" class="alert" hidden></div>
+<form id="login-form" novalidate>
+<div class="form-group"><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
+<div class="form-group"><label for="password">Password</label><input id="password" type="password" required autocomplete="current-password"></div>
+<button class="btn btn-block" id="submit">Login</button></form>
+<p class="auth-foot">New here? <a href="register.html">Create an account</a></p>
+<div class="demo"><strong>Demo (after running seed):</strong> admin@campus.edu / Password@123</div></div></div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

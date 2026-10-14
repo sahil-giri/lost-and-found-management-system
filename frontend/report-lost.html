@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report Lost Item | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="report-lost" data-nav="lost" data-auth="required">
+<div class="container" style="max-width:720px"><h1 id="form-title">Report a lost item</h1>
+<p class="muted">Describe what you lost and where. Others who find it can reach out through a claim.</p>
+<div class="card"><div id="msg" class="alert" hidden></div>
+<form id="report-form" data-type="LOST" novalidate>
+<div class="form-group"><label for="title">Item name</label><input id="title" required maxlength="150" placeholder="e.g. Black leather wallet"></div>
+<div class="row"><div class="form-group"><label for="category">Category</label><select id="category"></select></div>
+<div class="form-group"><label for="item_date">Date lost</label><input id="item_date" type="date" required></div></div>
+<div class="form-group"><label for="location">Location</label><input id="location" required maxlength="150" placeholder="e.g. Library, 2nd floor"></div>
+<div class="form-group"><label for="description">Description</label><textarea id="description" required placeholder="Colour, brand, distinguishing marks..."></textarea></div>
+<div class="form-group"><label for="image">Photo (optional)</label><input id="image" type="file" accept="image/jpeg,image/png,image/webp"><div class="hint">JPG, PNG or WEBP, max 2 MB.</div></div>
+<button class="btn" id="submit">Submit report</button></form></div></div>
+<script src="js/api.js"></script>
+<script src="js/reports.js"></script>
+</body>
+</html>

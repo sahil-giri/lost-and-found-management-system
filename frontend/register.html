@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body data-page="register" data-nav="register" data-auth="none">
+<div class="auth-wrap"><div class="card auth-card"><h1>Create account</h1><p class="sub">Join your campus Lost &amp; Found</p>
+<div id="msg" class="alert" hidden></div>
+<form id="register-form" novalidate>
+<div class="form-group"><label for="name">Full name</label><input id="name" required autocomplete="name"></div>
+<div class="form-group"><label for="email">Email</label><input id="email" type="email" required autocomplete="email"></div>
+<div class="form-group"><label for="phone">Phone (optional)</label><input id="phone" type="tel" autocomplete="tel"><div class="hint">Only shared with the other person after a claim is approved.</div></div>
+<div class="form-group"><label for="password">Password</label><input id="password" type="password" required autocomplete="new-password"><div class="hint">At least 8 characters, with a letter and a number.</div></div>
+<button class="btn btn-block" id="submit">Register</button></form>
+<p class="auth-foot">Already registered? <a href="login.html">Login</a></p></div></div>
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

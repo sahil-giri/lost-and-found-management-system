@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body data-page="admin-dashboard" data-nav="admin" data-auth="admin">
+<div class="container"><h1>Admin dashboard</h1>
+<div id="stats" class="grid grid-4"><div class="loading">Loading...</div></div>
+<div class="tabs"><button class="tab active" data-tab="recent">Recent reports</button><button class="tab" data-tab="users">Users</button><button class="tab" data-tab="items">Items</button><button class="tab" data-tab="claims">Claims</button></div>
+<div class="card"><div class="table-wrap" id="panel"></div></div></div>
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

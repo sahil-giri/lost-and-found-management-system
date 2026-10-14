@@ -1,0 +1,5 @@
+.auth-wrap{min-height:calc(100vh - 60px);display:flex;align-items:center;justify-content:center;padding:1.5rem 1rem}
+.auth-card{width:100%;max-width:420px}.auth-card h1{text-align:center}
+.auth-card .sub{text-align:center;color:var(--muted);margin-bottom:1.2rem}
+.auth-foot{text-align:center;margin-top:1rem;font-size:.9rem}
+.demo{background:#eef2ff;border-radius:8px;padding:.6rem .8rem;font-size:.8rem;margin-top:1rem}

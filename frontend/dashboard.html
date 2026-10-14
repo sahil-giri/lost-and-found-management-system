@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-page="dashboard" data-nav="dashboard" data-auth="required">
+<div class="container"><div class="page-head"><h1>Dashboard</h1><div><a class="btn" href="report-lost.html">Report lost</a> <a class="btn btn-outline" href="report-found.html">Report found</a></div></div>
+<div id="stats" class="grid grid-4"><div class="loading">Loading...</div></div>
+<div class="grid grid-2" style="margin-top:1rem"><div class="card"><h2>Recent reports</h2><div id="recent"></div></div>
+<div class="card"><div class="page-head" style="margin:0"><h2>Notifications</h2><a href="notifications.html" class="small">View all</a></div><div id="notifs"></div></div></div></div>
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

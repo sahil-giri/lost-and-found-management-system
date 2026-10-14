@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse Items | Lost &amp; Found</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="items" data-nav="items" data-auth="required">
+<div class="container"><div class="page-head"><h1>Browse items</h1></div>
+<form class="card filters" id="filters">
+<div><label for="q">Keyword</label><input id="q" placeholder="wallet, bottle, keys..."></div>
+<div><label for="type">Type</label><select id="type"><option value="">All</option><option>LOST</option><option>FOUND</option></select></div>
+<div><label for="category">Category</label><select id="category"><option value="">All</option></select></div>
+<div><label for="status">Status</label><select id="status"><option value="">Open &amp; active</option><option>LOST</option><option>FOUND</option><option>CLAIMED</option><option>RETURNED</option><option>CLOSED</option></select></div>
+<div><label for="location">Location</label><input id="location" placeholder="Library"></div>
+<div style="display:flex;gap:.4rem"><button class="btn">Search</button><button type="button" class="btn btn-outline" id="reset">Reset</button></div></form>
+<div id="count" class="muted small" style="margin-bottom:.6rem"></div>
+<div id="list" class="grid grid-3"></div><div class="pager" id="pager"></div></div>
+<script src="js/api.js"></script>
+<script src="js/items.js"></script>
+</body>
+</html>
