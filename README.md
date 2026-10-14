@@ -103,4 +103,4 @@ Add your own screenshots to the `screenshots/` folder and link them here after y
 - Deployment pipeline
 
 ## Author
-Your Name - Computer Science Engineering student
+Sahil Giri - Computer Science Engineering student
